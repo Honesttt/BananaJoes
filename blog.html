@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html><html style="background-image: url(bg-blog.png);background-size: 100%, 100%;"><head><style class="vjs-styles-defaults">.video-js { width: 300px; height: 150px; }
+﻿<!DOCTYPE html><html style="background-image: url(bg-blog.png);background-size: 100%, 100%;"><head>
+
+<style class="vjs-styles-defaults">.video-js { width: 300px; height: 150px; }
 .vjs-fluid { padding-top: 56.25%; }
 </style>
 <meta http-equiv="Content-Type" content="text/html;charset=US-ASCII">
@@ -27,21 +29,28 @@
 .cFE { color: rgb(255, 255, 85); background-color: rgb(255, 255, 255); }
 .cFF { color: rgb(255, 255, 255); background-color: rgb(255, 255, 255); }
 </style>
-
 <link rel="icon" href="">
 <style id="savepage-cssvariables">
   :root {
   }
 </style>
 <script id="savepage-shadowloader" type="application/javascript">
-  "use strict"
-  window.addEventListener("DOMContentLoaded",
-  function(event)
-  {
-    savepage_ShadowLoader(5);
-  },false);
-  function savepage_ShadowLoader(c){createShadowDOMs(0,document.documentElement);function createShadowDOMs(a,b){var i;if(b.localName=="iframe"||b.localName=="frame"){if(a<c){try{if(b.contentDocument.documentElement!=null){createShadowDOMs(a+1,b.contentDocument.documentElement)}}catch(e){}}}else{if(b.children.length>=1&&b.children[0].localName=="template"&&b.children[0].hasAttribute("data-savepage-shadowroot")){b.attachShadow({mode:"open"}).appendChild(b.children[0].content);b.removeChild(b.children[0]);for(i=0;i<b.shadowRoot.children.length;i++)if(b.shadowRoot.children[i]!=null)createShadowDOMs(a,b.shadowRoot.children[i])}for(i=0;i<b.children.length;i++)if(b.children[i]!=null)createShadowDOMs(a,b.children[i])}}}
-</script>
+  function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+  </script>
 <meta name="savepage-url" content="https://templeos.holyc.xyz/">
 <meta name="savepage-title" content="The Temple Operating System">
 <meta name="savepage-from" content="https://templeos.holyc.xyz/">
@@ -53,8 +62,34 @@
 <body style="background-color:#55FFFF; border-style:solid;
 	  border-width:8px; border-color:#0000AA;
 	  margin-left:auto; margin-right:auto; width:1000px; ">
-<pre style="font-family:courier;font-size:10pt"><div style="margin-left:auto; margin-right:auto; width: 640px;">
-<a name="l1"></a><span class="cB5">                          <h1><center>Honest's Blog v2.0</center></h1></span><span class="cB0">
+<pre style="font-family:courier;font-size:10pt" onload="startTime()">
+<head>
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</head>
+<body onload="startTime()">
+</body>
+<div style="margin-left:auto; margin-right:auto; width: 640px;">
+<a name="l1"></a><span class="cB5">
+                          <h1><center>Honest's Blog v2.0</center></h1></span><span class="cB0" style="background-color:black;color:#42f5d4;">Current Time: <span id="txt"></span></span>
+						  
+						  
+						  
 <span style="background-color:black;color:#42f5d4;">2:53PM EST 5/9/2020</span>
 If you guys are wondering about the documentary, main production will start on Monday
 5/11/2020 and is currently free, but I thought about making it paid for... Tell me what
