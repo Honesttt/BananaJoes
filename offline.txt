@@ -1,3 +1,22 @@
+/ping localhost
+
+Pinging "server-xd" with 32 bytes of data
+
+PING: transmit failed. General failure.
+PING: transmit failed. General failure.
+PING: transmit failed. General failure.
+PING: transmit failed. General failure.
+
+Ping statistics for server-xd:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+/if received = 0  >>
+/execute offline.bat
+
+		           Offline.bat
+================================================
 This is a pre-written message that will appear if the server is offline.
 Hi, it's me honest, this should ONLY appear if the server is own.
 Check back later to see if it is online! -Honest.
+================================================
+Response from server: offline, check back later!
