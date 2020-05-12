@@ -1,0 +1,9 @@
+5/12/2020
+
+So, sorry I'm using a text document for this, but the server is being REALLY buggy right now.
+Well, I was able to recover all the files except for one, the original homepage, not the one for
+@Abhi, but the one with the background and whatnot, I can  probably make a better homepage
+this time, but for now you have to live with a terminal style one. (NOTE: I should probably
+change it soon, cause the more people that load the homepage the more it puts on the server
+as those are raw commands, so if I change it from Python/Batch to probably html like  it
+normally should be, so it reads faster and it's more effecient.)
