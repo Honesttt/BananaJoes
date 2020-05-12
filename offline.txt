@@ -1,0 +1,3 @@
+This is a pre-written message that will appear if the server is offline.
+Hi, it's me honest, this should ONLY appear if the server is own.
+Check back later to see if it is online! -Honest.
